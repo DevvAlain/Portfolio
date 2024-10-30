@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import portfolio from "../../Assets/Projects/portfolio.png";
-import Mommilk from "../../Assets/Projects/Mommilk.png";
 import hairsalonFE from "../../Assets/Projects/hairsalonFE.png";
 import images from "../../Assets/Projects/images.jpg";
 
@@ -21,21 +20,15 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Mommilk}
-              isBlog={false}
-              title="MomMilk Front-End Project"
-              description="MomMilk is an e-commerce platform offering a wide range of milk products for pregnant mothers and babies. Users can easily search, compare, and buy milk that fits their needs. The platform uses React.js and Vite.js for the front-end, C# and API Swagger for the back-end, with MySQL and Firebase as databases. Authentication is secured with JSON Web Tokens (JWT), and the platform is deployed using Firebase and Azure. Our goal is to provide a seamless and secure shopping experience with a reliable and scalable technology stack."
-              ghLink="https://github.com/devbaoo/Summer2024SWP391_NJS1805_Group2_FE"
-              demoLink="https://suame88-f056d.web.app"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={hairsalonFE}
               isBlog={false}
               title="HairSalonBooking Front-End Project"
-              description="Our platform allows users to easily book haircuts based on their preferred services and stylists, view ratings and reviews from other customers, and make secure online payments. It also features a management system for staff and payroll. Built with React.js and Vite.js on the front-end, and Node.js and Express.js on the back-end, the platform uses MySQL and PostgreSQL databases, secured by JSON Web Tokens (JWT), and deployed on Firebase, Azure, Supabase, and DigitalOcean."
+              description="Our platform makes it easy for users to book haircuts tailored to their preferred services and stylists, 
+                          with access to ratings and reviews from other customers and secure online payments. It also includes a comprehensive management system for staff scheduling and payroll.
+                          Built with a modern tech stack, the platform leverages React.js and Vite.js on the front-end, 
+                          with Node.js and Express.js powering the back-end. MySQL and PostgreSQL databases ensure robust data management, 
+                          secured by JSON Web Tokens (JWT) for safe access. Deployed across Firebase, Azure, Supabase, and DigitalOcean, 
+                          it delivers a reliable and scalable user experience."
               ghLink="https://github.com/HairSalonBooking/HairSalonBooking_FE"
               demoLink="https://hair-salon-vjp.azurewebsites.net/"
             />
@@ -46,8 +39,14 @@ function Projects() {
               imgPath={hairsalonFE}
               isBlog={false}
               title="HairSalonBooking Back-End Project"
-              description="Our platform allows users to easily book haircuts based on their preferred services and stylists, view ratings and reviews from other customers, and make secure online payments. It also features a management system for staff and payroll. Built with React.js and Vite.js on the front-end, and Node.js and Express.js on the back-end, the platform uses MySQL and PostgreSQL databases, secured by JSON Web Tokens (JWT), and deployed on Firebase, Azure, Supabase, and DigitalOcean."
-              ghLink="https://github.com/devbaoo/Backend-HairSalonBooking"
+              description="Our platform offers a seamless experience for users to book haircuts tailored to their preferred services and stylists, 
+                          browse customer ratings and reviews, and make secure online payments. 
+                          For staff, it includes a comprehensive management system covering scheduling and payroll.
+                          Powered by React.js and Vite.js on the front-end, with Node.js and Express.js on the back-end, 
+                          the platform ensures reliable performance and a smooth user experience. 
+                          It leverages MySQL and PostgreSQL databases, secured by JSON Web Tokens (JWT) for robust data protection. 
+                          Deployments on Firebase, Azure, Supabase, and DigitalOcean make the platform scalable and accessible across multiple environments."
+              ghLink="https://github.com/devalain/Backend-HairSalonBooking"
               demoLink="https://oyster-app-pc2gd.ondigitalocean.app/"
             />
           </Col>
@@ -56,8 +55,8 @@ function Projects() {
               imgPath={portfolio}
               isBlog={false}
               title="Portfolio"
-              description="This is a project for managing billiards. The project is built using C#, Entity Framework. I am coding this project"
-              ghLink="https://github.com/devbaoo/BilliardsManagement"
+              description="This is my portfolio website. It is built using React.js and React-Bootstrap. The website is responsive and has a dark mode feature. The website is deployed on GitHub Pages."
+              ghLink="https://github.com/DevvAlain/Portfolio"
               demoLink="https://billiardsmanagement.azurewebsites.net/"
             />
           </Col>
@@ -66,9 +65,9 @@ function Projects() {
               imgPath={images}
               isBlog={false}
               title="BilliardsManagement Back-End Project"
-              description="This is my portfolio website. It is built using React.js and React-Bootstrap. The website is responsive and has a dark mode feature. The website is deployed on GitHub Pages."
-              ghLink="https://github.com/devbaoo/Portfolio"
-              demoLink="https://devbaoo.vercel.app/project"
+              description="This is a project for managing billiards. The project is built using C#, Entity Framework. I am coding this project"
+              ghLink="https://github.com/DevvAlain/BilliardsManagement"
+            // demoLink="https://devalain.vercel.app/project"
             />
           </Col>
         </Row>

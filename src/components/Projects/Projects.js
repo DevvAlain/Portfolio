@@ -57,7 +57,7 @@ function Projects() {
               title="Portfolio"
               description="This is my portfolio website. It is built using React.js and React-Bootstrap. The website is responsive and has a dark mode feature. The website is deployed on GitHub Pages."
               ghLink="https://github.com/DevvAlain/Portfolio"
-              demoLink="https://billiardsmanagement.azurewebsites.net/"
+              demoLink="portfolio-2srxlxkmb-dylans-projects-084f2ea4.vercel.app"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -67,7 +67,8 @@ function Projects() {
               title="BilliardsManagement Back-End Project"
               description="This is a project for managing billiards. The project is built using C#, Entity Framework. I am coding this project"
               ghLink="https://github.com/DevvAlain/BilliardsManagement"
-            // demoLink="https://devalain.vercel.app/project"
+              demoLink="https://billiardsmanagement.azurewebsites.net/"
+
             />
           </Col>
         </Row>

@@ -4,6 +4,7 @@ import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import Lenis from "lenis";
 import "./styles/Navbar.css";
+import { config } from "../config";
 
 gsap.registerPlugin(ScrollTrigger);
 export let lenis: Lenis | null = null;
@@ -67,14 +68,14 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          CA
+          VTD
         </a>
         <a
-          href="mailto:codexahmar@gmail.com"
+          href={`mailto:${config.contact.email}`}
           className="navbar-connect"
           data-cursor="disable"
         >
-          codexahmar@gmail.com
+          {config.contact.email}
         </a>
         <ul>
           <li>

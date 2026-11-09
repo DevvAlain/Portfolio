@@ -1,0 +1,6 @@
+# Robots.txt for Vu Thanh Duc Portfolio
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://vuthanhduc.dev/sitemap.xml

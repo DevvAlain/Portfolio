@@ -69,17 +69,21 @@ const Work = () => {
             <div className="work-box" key={project.id}>
               <div className="work-info">
                 <div className="work-title">
-                  <h3>0{index + 1}</h3>
+                  <span className="work-index">0{index + 1}</span>
 
                   <div>
-                    <h4>{project.title}</h4>
+                    <h3>{project.title}</h3>
                     <p>{project.category}</p>
                   </div>
                 </div>
                 <h4>Tools and features</h4>
                 <p>{project.technologies}</p>
               </div>
-              <WorkImage image={project.image} alt={project.title} />
+              <WorkImage
+                image={project.image}
+                alt={`${project.title} - ${project.category}`}
+                link={project.link}
+              />
             </div>
           ))}
           {/* See All Works Button */}

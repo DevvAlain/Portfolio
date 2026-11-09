@@ -18,3 +18,6 @@ build_errors.txt
 # Media captures from local testing
 Screenshot_*.png
 screen-capture *.webm
+
+# IDE
+.idea/

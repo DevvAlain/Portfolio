@@ -350,3 +350,20 @@
     font-size: 14px;
   }
 }
+
+
+/* SEO Heading & index styling */
+.work-title .work-index {
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  font-weight: 600;
+  display: block;
+}
+
+.work-title div h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
+}

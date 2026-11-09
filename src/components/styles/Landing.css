@@ -577,3 +577,14 @@ h2.landing-info-h2 {
     letter-spacing: 1px;
   }
 }
+
+
+/* SEO Heading hierarchy fix */
+.landing-info .landing-prefix {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: var(--accentColor);
+  margin: 0;
+  display: block;
+}

@@ -25,9 +25,14 @@ const MyWorks = () => {
             <div
               className="myworks-card-image"
               onClick={() => setSelectedImage(project.image)}
-              style={{ cursor: 'zoom-in' }}
+              style={{ cursor: "zoom-in" }}
             >
-              <img src={project.image} alt={project.title} />
+              <img
+                src={project.image}
+                alt={`${project.title} - ${project.category}`}
+                loading="lazy"
+                decoding="async"
+              />
               <div className="image-overlay">
                 <span>🔍 Click to View</span>
               </div>
@@ -37,6 +42,23 @@ const MyWorks = () => {
               <p className="myworks-card-category">{project.category}</p>
               <p className="myworks-card-description">{project.description}</p>
               <p className="myworks-card-tech">{project.technologies}</p>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="myworks-card-link"
+                  style={{
+                    display: "inline-block",
+                    marginTop: "12px",
+                    color: "#c481ff",
+                    fontWeight: 500,
+                    textDecoration: "none",
+                  }}
+                >
+                  Visit Project ↗
+                </a>
+              )}
             </div>
           </div>
         ))}
@@ -46,8 +68,10 @@ const MyWorks = () => {
       {selectedImage && (
         <div className="image-modal" onClick={() => setSelectedImage(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-modal" onClick={() => setSelectedImage(null)}>×</button>
-            <img src={selectedImage} alt="Work detail" />
+            <button className="close-modal" onClick={() => setSelectedImage(null)}>
+              ×
+            </button>
+            <img src={selectedImage} alt="Work detail full view" loading="lazy" />
           </div>
         </div>
       )}
